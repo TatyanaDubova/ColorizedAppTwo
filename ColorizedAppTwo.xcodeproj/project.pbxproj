@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7BF603E02B2C63CD00DBB323 /* ColorizedAppTwoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF603DF2B2C63CD00DBB323 /* ColorizedAppTwoApp.swift */; };
+		7BF603E02B2C63CD00DBB323 /* ColorizedTwoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF603DF2B2C63CD00DBB323 /* ColorizedTwoApp.swift */; };
 		7BF603E22B2C63CD00DBB323 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF603E12B2C63CD00DBB323 /* ContentView.swift */; };
 		7BF603E42B2C63CE00DBB323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BF603E32B2C63CE00DBB323 /* Assets.xcassets */; };
 		7BF603E72B2C63CE00DBB323 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BF603E62B2C63CE00DBB323 /* Preview Assets.xcassets */; };
+		7BF603EE2B2C6C5E00DBB323 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF603ED2B2C6C5E00DBB323 /* ColorView.swift */; };
+		7BF603F02B2C752300DBB323 /* ColorSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF603EF2B2C752300DBB323 /* ColorSliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7BF603DC2B2C63CD00DBB323 /* ColorizedAppTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorizedAppTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7BF603DF2B2C63CD00DBB323 /* ColorizedAppTwoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedAppTwoApp.swift; sourceTree = "<group>"; };
+		7BF603DF2B2C63CD00DBB323 /* ColorizedTwoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedTwoApp.swift; sourceTree = "<group>"; };
 		7BF603E12B2C63CD00DBB323 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7BF603E32B2C63CE00DBB323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BF603E62B2C63CE00DBB323 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7BF603ED2B2C6C5E00DBB323 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		7BF603EF2B2C752300DBB323 /* ColorSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		7BF603DE2B2C63CD00DBB323 /* ColorizedAppTwo */ = {
 			isa = PBXGroup;
 			children = (
-				7BF603DF2B2C63CD00DBB323 /* ColorizedAppTwoApp.swift */,
+				7BF603DF2B2C63CD00DBB323 /* ColorizedTwoApp.swift */,
 				7BF603E12B2C63CD00DBB323 /* ContentView.swift */,
+				7BF603ED2B2C6C5E00DBB323 /* ColorView.swift */,
+				7BF603EF2B2C752300DBB323 /* ColorSliderView.swift */,
 				7BF603E32B2C63CE00DBB323 /* Assets.xcassets */,
 				7BF603E52B2C63CE00DBB323 /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF603EE2B2C6C5E00DBB323 /* ColorView.swift in Sources */,
+				7BF603F02B2C752300DBB323 /* ColorSliderView.swift in Sources */,
 				7BF603E22B2C63CD00DBB323 /* ContentView.swift in Sources */,
-				7BF603E02B2C63CD00DBB323 /* ColorizedAppTwoApp.swift in Sources */,
+				7BF603E02B2C63CD00DBB323 /* ColorizedTwoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,9 +294,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Tatya.ColorizedAppTwo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,9 +325,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Tatya.ColorizedAppTwo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

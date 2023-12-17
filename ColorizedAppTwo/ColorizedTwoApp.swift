@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct ColorizedAppTwoApp: App {
+struct ColorizedTwoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
